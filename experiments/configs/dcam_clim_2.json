@@ -1,0 +1,40 @@
+{
+
+    "model_parameters":
+        {
+        "nb_permutations":200,
+        "batch_size":32,
+        "num_epochs":40,
+        "number_of_layers":6,
+        "number_of_channels":128,
+        "time_kernel":2
+        },
+        
+    "modelname":"dCAM",
+    "dataset_name":"TestCLIM_N-5_T-250/returns",
+    "numberLabels":2,
+    "pastPointsToForecast":8,
+    "numberFolds":1,
+    "test_split_fraction":0.3,
+    "explanation_methods":["IG", "GS", "FA", "FP", "OS","DM","dCAM"],
+    "load_model":true,
+
+
+
+    "minority_only":true,
+    "topKlagged_max":40,
+    "topKnonlagged_max":5,
+    "causeExtraction":"parents",
+
+    "compute_lagged_restricted":true,
+    "compute_nonlagged_restricted":false,
+    "true_restricted":true,
+    
+    
+    "dir_to_save":"dcam_clim_2/"
+    
+}
+
+
+
+

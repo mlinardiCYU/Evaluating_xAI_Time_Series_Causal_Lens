@@ -1,0 +1,38 @@
+{
+
+    "model_parameters":
+        {
+        "batch_size":32,
+        "epochs":15,
+        "filters_num":85,
+        "window_size":0.56
+        },
+        
+    "modelname":"XCM_pytorch",
+    "dataset_name":"fMRI_processed_by_Nauta/returns/our_selection",
+    "numberLabels":2,
+    "pastPointsToForecast":8,
+    "numberFolds":1,
+    "test_split_fraction":0.3,
+    "explanation_methods":["IG", "GS", "FA", "FP", "OS","DM","XCM-2D"],
+    "load_model":true,
+
+
+
+    "minority_only":true,
+    "topKlagged_max":40,
+    "topKnonlagged_max":5,
+    "causeExtraction":"parents",
+
+    "compute_lagged_restricted":true,
+    "compute_nonlagged_restricted":false,
+    "true_restricted":true,
+    
+    
+    "dir_to_save":"xcm_fmri_2/"
+    
+}
+
+
+
+

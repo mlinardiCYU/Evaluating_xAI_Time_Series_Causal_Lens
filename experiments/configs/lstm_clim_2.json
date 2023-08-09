@@ -1,0 +1,37 @@
+{
+
+    "model_parameters":
+        {
+        "hidden_size":34,
+        "rnndropout":0.49,
+        "epochs":20,
+        "batch_size":32
+        },
+        
+    "modelname":"LSTM",
+    "dataset_name":"TestCLIM_N-5_T-250/returns",
+    "numberLabels":2,
+    "pastPointsToForecast":8,
+    "numberFolds":1,
+    "test_split_fraction":0.3,
+    "explanation_methods":["IG", "GS", "FA", "FP", "OS", "DM"],
+    "load_model":true,
+
+
+    "minority_only":true,
+    "topKlagged_max":40,
+    "topKnonlagged_max":5,
+    "causeExtraction":"parents",
+
+    "compute_lagged_restricted":true,
+    "compute_nonlagged_restricted":false,
+    "true_restricted":true,
+    
+    
+    "dir_to_save":"lstm_clim_2/"
+    
+}
+
+
+
+
